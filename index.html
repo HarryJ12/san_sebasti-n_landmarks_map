@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>San Sebastián Personal Landmark Map</title>
+
     <style>
+        /* Ensures consistent layout behavior across browsers */
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
         }
 
+        /* Establishes the primary visual theme and base typography */
         body {
             font-family: 'Lato', 'Inter', 'Segoe UI', sans-serif;
             background: linear-gradient(135deg, #28a745 0%, #dc3545 50%, #ffffff 100%);
@@ -19,12 +22,14 @@
             line-height: 1.6;
         }
 
+        /* Defines the main content area and centers it on the page */
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 20px;
         }
 
+        /* Provides structured spacing and alignment for the header section */
         .header {
             text-align: center;
             margin-bottom: 40px;
@@ -32,6 +37,7 @@
             color: white;
         }
 
+        /* Styles the primary page title for emphasis and readability */
         .title {
             font-size: 3.5rem;
             font-weight: 600;
@@ -41,6 +47,7 @@
             letter-spacing: -0.5px;
         }
 
+        /* Formats the subtitle containing the date range */
         .subtitle {
             font-size: 1.1rem;
             color: #f8f9fa;
@@ -52,6 +59,7 @@
             text-transform: uppercase;
         }
 
+        /* Optional descriptive text area for future content */
         .description {
             font-size: 1.2rem;
             color: #e9ecef;
@@ -60,12 +68,14 @@
             line-height: 1.6;
         }
 
+        /* Adjusts the spatial structure surrounding the map section */
         .map-section {
             padding: 20px;
             margin-bottom: 40px;
             margin-top: -60px;
         }
 
+        /* Provides a styled frame and visual containment for the map */
         .map-container {
             border-radius: 10px;
             overflow: hidden;
@@ -75,6 +85,7 @@
             padding: 0;
         }
 
+        /* Ensures the embedded map occupies the intended viewing area */
         .map-iframe {
             width: 100%;
             height: 500px;
@@ -84,13 +95,14 @@
             display: block;
         }
 
+        /* Styles the attribution section required for map usage */
         .map-attribution {
             text-align: left;
             margin-top: 2px;
             padding: 5px;
-            position: relative;
         }
 
+        /* Formats the attribution link for legibility and consistency */
         .map-attribution a {
             color: rgba(255, 255, 255, 0.8);
             text-decoration: none;
@@ -104,6 +116,7 @@
             text-decoration: underline;
         }
 
+        /* Final section of the page with centered closing text */
         .footer {
             text-align: center;
             padding: 30px;
@@ -111,15 +124,14 @@
             margin-top: 60px;
         }
 
+        /* Defines the appearance of a potential author tag if added */
         .author {
             font-size: 0.9rem;
             font-weight: 500;
-            margin-bottom: 0;
-            font-family: 'Inter', sans-serif;
             letter-spacing: 0.3px;
-            display: inline;
         }
 
+        /* Closing remark above the footer to enhance context */
         .explore-text {
             font-size: 1rem;
             color: #e9ecef;
@@ -131,6 +143,7 @@
             margin: 0;
         }
 
+        /* Responsive adjustments for improved readability on smaller screens */
         @media (max-width: 768px) {
             .title {
                 font-size: 2rem;
@@ -156,27 +169,33 @@
 </head>
 <body>
     <div class="container">
+
         <header class="header">
+            <!-- Displays the primary title and the relevant date range -->
             <h1 class="title">San Sebastian Personal Landmark Map</h1>
             <h2 class="subtitle">Dates Visited: July 19 - August 9th, 2025</h2>
         </header>
 
         <section class="map-section">
+            <!-- Embeds the interactive landmark map provided by Mapline -->
             <div class="map-container">
-                <iframe src="https://app.mapline.com/map/map_61184f78/SVpQMkJLN1c0RWx2dVRCdjJkaThoWjBrV25sb3Q1bC8xWTllTj" 
-                        class="map-iframe" 
-                        allow="geolocation *">
+                <iframe 
+                    src="https://app.mapline.com/map/map_61184f78/SVpQMkJLN1c0RWx2dVRCdjJkaThoWjBrV25sb3Q1bC8xWTllTj"
+                    class="map-iframe"
+                    allow="geolocation *">
                 </iframe>
             </div>
+
+            <!-- Required attribution for external map service usage -->
             <div class="map-attribution">
                 <a href="https://mapline.com" target="_blank">Mapped by Harry Joshi</a>
             </div>
         </section>
 
         <footer class="footer">
+            <!-- Concluding text summarizing the purpose of the map -->
             <div class="explore-text">Explore the memorable landmarks of San Sebastián</div>
         </footer>
     </div>
 </body>
 </html>
-
